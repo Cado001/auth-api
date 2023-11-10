@@ -11,8 +11,8 @@ app.use(cors())
 app.use(express.json())
 
 // Non-protected routes:
-app.post('/user', createUser)
-app.post('/user/login', login)
+app.post('/users', createUser)
+app.post('/users/login', login)
 app.get('/recipes', isAuthenticated , getAllRecipes)
 
 // Protected routes:
